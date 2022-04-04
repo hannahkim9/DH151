@@ -1,0 +1,35 @@
+body,html {
+	margin:0;
+	height:100%;
+	width:100%;
+}
+
+body {
+    display: grid;
+	grid-template-rows: 90px 1fr;
+	grid-template-columns: 220px 1fr;
+	grid-template-areas: 
+	"header header"
+	"sidebar content";
+}
+
+.header {
+	grid-area: header;
+	padding:15px;
+    background-color: #ffaebb;
+    font-family: 'Verdana', sans-serif;
+}
+
+.sidebar {
+	grid-area: sidebar;
+	padding-left:20px;
+    background-color: #ffc5cd;
+    font-family: 'Verdana', sans-serif;
+}
+.content {
+	grid-area: content;
+    padding-left:20px;
+    padding-right:20px;
+    font-family: 'Verdana', sans-serif;
+    line-height: 1.5;
+}
