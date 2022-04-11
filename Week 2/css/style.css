@@ -1,5 +1,4 @@
 </body>
-
 </html>
 
 body,html {
@@ -14,7 +13,7 @@ body,html {
 
 body {
     display: grid;
-    grid-template-rows: 80px 1fr;
+    grid-template-rows: 100px 1fr;
     grid-template-columns: 250px 1fr;
     grid-template-areas: 
     "header header"
@@ -22,19 +21,18 @@ body {
 }
 
 .header {
-    font-size: 30px;
+    font-size: 40px;
     font-family: Roboto;
     grid-area: header;
     padding:10px;
-    background-color: rgb(183, 223, 255);
-    color: white;
-    font-size: 2em;
+    background-color: rgb(179, 214, 187);
 }
 
 .sidebar {
     grid-area: sidebar;
-    padding:10px;
-    background-color: rgb(205, 233, 255);
+    padding:30px;
+    background-color: rgb(152, 182, 159);
+	font-size: 20px 
 }
 
 .content {

@@ -17,19 +17,19 @@
 <body>
 
     <div class="header">
-        Hannah's Travels ٩(ˊᗜˋ*)و
+        <b>Hannah's Travels ٩(ˊᗜˋ*)و</b>
     </div>
 
     <div class="sidebar">
         <h2><i>My Favorite Places I Have Visited!</i></h2>
         <p>Welcome! Feel free to explore my page to see some of my favorite cities I have visited over the years.</p>
-            <li>Seoul, South Korea</li>
-            <li>Tokyo, Japan</li>
-            <li>London, England</li>
-            <li>Rome, Italy</li>
-            <li>Budapest, Hungary</li>
-            <li>New York, New York</li>
-            <li>Chicago, Illinois</li>
+            <li>Seoul, South Korea 🇰🇷</li>
+            <li>Tokyo, Japan 🍡</li>
+            <li>London, England 🇬🇧</li>
+            <li>Rome, Italy 🍝</li>
+            <li>Budapest, Hungary 🇭🇺</li>
+            <li>New York, New York 🗽</li>
+            <li>Chicago, Illinois 🇺🇸</li>
     </div>
 
     <div class="content">
@@ -43,7 +43,7 @@
                 'title': 'Seoul, South Korea',
                 'lat': 37.532600,
                 'lon': 127.024612,
-                'description': 'I have visted Seoul many times with my family and usually go in the summertime. Each visit is always super fun because the city is so vibrant and there is so much good food, shopping, and attractions!
+                'description': 'I have visted Seoul many times with my family and usually go in the summertime. Each visit is always super fun because the city is so vibrant and there is so much good food, shopping, and attractions!'
             },
             {
                 'title': 'Tokyo, Japan',
@@ -94,11 +94,7 @@
                 title: item.title,
             })
                 .addTo(map)
-                .bindPopup("<b>"+ item.title + "</b><br>" + item.pic + '<br>' + item.description)
-                .openPopup()
-                .on('click', function (e) {
-                    map.setView(e.latlng, 14);
-                });;
+                .bindPopup("<b>"+ item.title + "</b><br>" + '<br>' + item.description)
         });
 
     </script>
