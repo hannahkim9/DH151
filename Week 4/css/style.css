@@ -1,0 +1,75 @@
+body,html {
+	margin:0;
+	height:100%;
+	width:100%;
+}
+
+#map {
+	height: 100%;
+}
+
+body {
+	display: grid;
+	grid-template-rows: 80px 1fr 50px;
+	grid-template-columns: 50% 50%;
+	grid-template-areas: 
+	"header header"
+	"sidebar content"
+	"footer footer";
+}
+
+.header {
+	grid-area: header;
+	padding:10px;
+	background-color: rgb(231, 203, 244);
+	color: black;
+	font-size: 2em;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	background-image: url();
+}
+
+.sidebar {
+	color: black;
+	grid-area: sidebar;
+	padding:10px;
+	background-color: rgb(241, 212, 255);
+	overflow: auto;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+}
+
+.sidebar-item{
+	border: 1px;
+	border-color: white;
+	border-radius: 40px;
+	padding: 30px;
+	background: rgb(201, 176, 213);
+	color: white;
+	margin: 5px;
+	cursor: pointer;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+}
+
+.sidebar-item:hover {
+	background: rgb(248, 234, 255);
+	color: black;
+}
+
+.content {
+	grid-area: content;
+}
+
+.footer {
+	grid-area: footer;
+	padding:10px;
+	background-color: rgb(231, 203, 244);
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+  }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BTS</title>
+	<meta charset="utf-8" />
+
+	<!-- style sheets -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/papaparse.min.js"></script>
+</head>
+<body>
+
+	<div class="header">
+		BTS at Award Shows Around the World
+	</div>
+	<div class="sidebar">
+		<img src="https://raw.githubusercontent.com/hannahkim9/DH151/main/bts.png.webp"
+			width="350"
+			height="350"
+			class="center"/>
+		<h2>Welcome!</h2>
+		<p>South Korean pop group BTS has reached new heights of success over the years. The seven members have gained global popularity—transcending barriers of language in music.</p>
+		<p>Click through the regions below to explore BTS's attendance at various award shows over the years. The following buttons are for cities in which they visit most frequently for award shows.</p>
+		<div class="sidebar-item" onclick="flyToIndex(34.0522,-118.2437)">Los Angeles</div>
+		<div class="sidebar-item" onclick="flyToIndex(37.5665,126.9780)">Seoul</div>
+		<div class="sidebar-item" onclick="flyToIndex(35.6762,139.6503)">Tokyo</div>
+		<div class="sidebar-item" onclick="flyToIndex(40.76762,-73.96820)">New York City</div>
+	</div>
+	<div class="content">
+		<div id="map"></div>
+	</div>
+	<div class="footer">
+		Source: <a href="https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_BTS">Wikipedia</a>
+	</div>
+
+	<script src="js/map.js"></script>
+
+</body>
+</html>
